@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/download" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dark_shade2"/>
+
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="?attr/actionBarSize"
+                android:weightSum="1">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                           android:src="@drawable/circle"
+                            android:id="@+id/profile"
+                            app:civ_border_color="#ffffff"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="15dp"
+                            app:civ_border_width="2dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:textColor="#FFF"
+                            android:id="@+id/title"
+                            android:hint="Add a relevant title for your broadcast"
+                            android:gravity="center_horizontal"
+                            android:textColorHint="#ffffff"
+                            android:backgroundTint="#ffffff"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="# Tag your LIVE"
+                            android:layout_margin="10dp"
+                            android:textSize="16dp"
+                            android:gravity="center_horizontal"
+                            android:textColorHint="#ffffff" />
+
+
+                    </LinearLayout>
+
+
+                    <ImageButton
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/close"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/close"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/galat"
+                        android:src="@drawable/close"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:text="Share"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="20dp"
+                                android:src="@drawable/facebook" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/google" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/twitter" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="30dp"
+                            android:paddingEnd="30dp"
+                            android:textColor="#ffffff"
+                            android:visibility="visible"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            />
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           android:background="@drawable/background_golive"
+                            android:text="GO LIVE"
+                            android:textColor="#fff"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/golive"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="20dp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

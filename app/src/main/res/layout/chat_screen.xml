@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/circle"
+                    android:id="@+id/profile"
+                    app:civ_border_color="#ffffff"
+                    android:layout_marginStart="30dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="15dp"
+                    app:civ_border_width="2dp"/>
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/circle"
+                    android:id="@+id/profile2"
+                    app:civ_border_color="#ffffff"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:civ_border_width="2dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            app:civ_border_color="#ffffff"
+            android:background="@drawable/whitecircle"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/circle"
+            app:civ_border_width="2dp"/>
+
+
+    </RelativeLayout>
+   </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure Want to"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unfollow User name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_pink"
+            android:text="Unfollow"
+            android:textColor="#fff"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pink_stroke"
+            android:text="Cancel"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

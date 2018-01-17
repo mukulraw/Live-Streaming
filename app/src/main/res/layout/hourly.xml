@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cdcdcd_sqaure"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="st"
+                    android:textColor="#000" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/circle"
+                    android:layout_marginEnd="10dp"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="User Name"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Status"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="#000" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="30dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="2"
+                            android:textColor="#000"
+                            android:textSize="25sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="nd"
+                            android:textColor="#000" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/circle"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="2dp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="18dp"
+                        android:gravity="start"
+                        android:padding="2dp"
+                        android:text="User Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="40dp"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textColor="#000" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="30dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="3"
+                            android:textColor="#000"
+                            android:textSize="25sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="rd"
+                            android:textColor="#000" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/circle"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="2dp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="15dp"
+                        android:gravity="start"
+                        android:padding="2dp"
+                        android:text="User Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="40dp"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textColor="#000" />
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/see"
+                android:padding="5dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:text="See All"
+                android:layout_marginBottom="5dp"
+                android:drawableEnd="@drawable/blackarrow"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
