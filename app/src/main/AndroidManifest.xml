@@ -22,9 +22,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -33,18 +31,10 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
-        <activity android:name=".Login" >
 
-
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
-        </activity>
+        <activity android:name=".Login" />
         <activity android:name=".SignUp" />
         <activity android:name=".OtpVerification" />
         <activity android:name=".Following" />
@@ -58,7 +48,18 @@
         <activity android:name=".Vlog1" />
         <activity android:name=".ChatScree" />
         <activity android:name=".Personal_info" />
-        <activity android:name=".Goliv"></activity>
+        <activity android:name=".Goliv" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Screen1" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".EditProfile1" />
+        <activity android:name=".More"></activity>
     </application>
 
 </manifest>

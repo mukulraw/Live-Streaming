@@ -179,6 +179,7 @@
         android:orientation="horizontal"
         android:weightSum="6"
         android:padding="10dp"
+        android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:background="@drawable/square">
 

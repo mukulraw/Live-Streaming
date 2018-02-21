@@ -17,6 +17,8 @@ public class Login extends AppCompatActivity {
 
     Button signup , login;
 
+    final private int REQUEST_CODE_ASK_PERMISSIONS = 123;
+
     String[] PERMISSIONS = {
             Manifest.permission.SEND_SMS,
             Manifest.permission.READ_SMS,
@@ -30,7 +32,7 @@ public class Login extends AppCompatActivity {
             Manifest.permission.CAMERA
     };
 
-    final private int REQUEST_CODE_ASK_PERMISSIONS = 123;
+
 
 
     @Override
@@ -38,8 +40,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        signup = findViewById(R.id.signup);
-        login = findViewById(R.id.login);
+        signup = (Button) findViewById(R.id.signup);
+        login = (Button) findViewById(R.id.login);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

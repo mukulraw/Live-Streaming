@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context="com.example.user.livestreaming.Login">
-
 
 
     <LinearLayout
@@ -17,66 +16,60 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signup"
-            android:text="SIGN UP"
-            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:textSize="18sp"
+            android:layout_marginStart="30dp"
             android:background="@drawable/background_white"
-
-
-            />
+            android:text="SIGN UP"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Already have a account"
             android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:gravity="center"
+            android:text="Already have a account"
+            android:textColor="#fff" />
 
         <Button
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/login"
-            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/background_pink"
             android:text="LOG IN"
             android:textColor="#fff"
-            android:textSize="18sp"
-            android:background="@drawable/background_pink"
-            />
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="18dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
             android:weightSum="3">
-
 
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#fff"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginEnd="10dp"
                     android:layout_gravity="center_vertical"
-                    android:gravity="center_vertical"
-                    />
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="60dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical" />
 
             </LinearLayout>
 
@@ -84,17 +77,17 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="or connect with us"
-                    android:textColor="#fff"
                     android:layout_gravity="center"
                     android:gravity="center_vertical"
+                    android:text="or connect with us"
+                    android:textColor="#fff"
 
                     />
 
@@ -104,25 +97,20 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#fff"
                     android:layout_marginEnd="60dp"
-                    />
+                    android:background="#fff" />
 
             </LinearLayout>
 
 
-
-
-
         </LinearLayout>
-
 
 
         <LinearLayout
@@ -162,61 +150,60 @@
         </LinearLayout>
 
 
-
-        <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginTop="10dp">
-
-
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:text="by Signing up and you agree to our"
-               android:textColor="#fff"
-               android:layout_gravity="center_vertical"
-               android:gravity="center"/>
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp"
-            android:layout_gravity="center_vertical"
-            android:gravity="center">
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Terms of use"
-                android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="center_vertical"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="by Signing up and you agree to our"
+                android:textColor="#fff" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" and"
-               android:textColor="#fff"
                 android:layout_gravity="center_vertical"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Privacy Policy."
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_gravity="center_vertical"
-                android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Terms of use"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text=" and"
+                    android:textColor="#fff" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Privacy Policy."
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
 
     </LinearLayout>
 

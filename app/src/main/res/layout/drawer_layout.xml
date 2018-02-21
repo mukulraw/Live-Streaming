@@ -1,73 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#faf6f6"
-    android:minWidth="300dp">
+    android:minWidth="300dp"
+    android:orientation="vertical">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/u" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="User Name"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="View Your Profile" />
+
+        </LinearLayout>
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
             android:id="@+id/setting"
-            android:drawableStart="@drawable/setting"
-            android:text="Setting"
-            android:layout_gravity="center_vertical"
-            android:gravity="center_vertical"
-            android:textColor="#fff"
-            android:drawablePadding="10dp"
-            android:paddingStart="10dp"
-            android:background="@color/colorPrimaryDark"
-            />
-
-
-
-        <Switch
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:drawableEnd="@drawable/setting"
+            android:gravity="end"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#000"
+            android:drawablePadding="15sp"
+            android:drawableStart="@drawable/h"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:paddingStart="18dp"
+            android:text="Home"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/myvlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#000"
+            android:drawablePadding="15sp"
+            android:drawableStart="@drawable/p"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:paddingStart="18dp"
+            android:text="My Vlog"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#000"
+            android:drawablePadding="15sp"
+            android:drawableStart="@drawable/me"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:paddingStart="18dp"
+            android:text="Messages"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:id="@+id/wallat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#000"
+            android:drawablePadding="15sp"
+            android:drawableStart="@drawable/w"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:paddingStart="18dp"
+            android:text="Wallet"
+            android:textColor="#fff" />
+
+
+        <TextView
             android:id="@+id/notification"
-            android:paddingStart="18dp"
-            android:drawablePadding="10dp"
-            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:background="#000"
+            android:drawablePadding="15sp"
+            android:drawableStart="@drawable/noti"
             android:gravity="center_vertical"
-            android:text="Notification"
-            />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#fff"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:id="@+id/notice"
-            android:textColor="#000"
-            android:text="Feedback"
-            android:paddingStart="18dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#fff"/>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:id="@+id/logout"
+            android:padding="12dp"
             android:paddingStart="18dp"
-            android:textColor="#000"
-            android:text="Logout"/>
+            android:text="Notification"
+            android:textColor="#fff" />
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
 
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/video1"
+                    android:background="@drawable/whitecircle"
+                    android:padding="20dp"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:id="@+id/live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="LIVE" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/whitecircle"
+                    android:padding="20sp"
+                    android:src="@drawable/cammera" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="25dp"
+                    android:gravity="start"
+                    android:text="VIDEO" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/golive"
+            android:background="@drawable/background_pink"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/govideo"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Go Live"
+                android:textColor="#fff"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
 </LinearLayout>

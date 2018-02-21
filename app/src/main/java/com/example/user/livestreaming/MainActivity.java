@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.FileProvider;
 import android.support.v4.view.GravityCompat;
@@ -20,6 +22,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
@@ -35,23 +38,33 @@ public class MainActivity extends AppCompatActivity {
 
     DrawerLayout drawer;
 
-    RelativeLayout popup ;
-    LinearLayout video , camera;
+    RelativeLayout popup;
+    //LinearLayout video, camera;
 
     private static final int VIDEO_CAPTURE = 101;
     private Uri fileUri;
 
-
     AHBottomNavigation bottom;
+
+    TextView vlog, message, wallat, home, notification, setting;
+
+
+    LinearLayout video1 , cammera;
+
+    RelativeLayout golive;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottom = findViewById(R.id.bottom_navigation);
-        popup = findViewById(R.id.popup);
-        video = findViewById(R.id.video);
-        camera = findViewById(R.id.camera);
 
+        toolbar = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setTitleTextColor(Color.WHITE);
+
+        toolbar.setTitle("Home");
 
         drawer = (DrawerLayout) findViewById(R.id.activity_main);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -60,20 +73,119 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
 
+        bottom = findViewById(R.id.bottom_navigation);
+        popup = findViewById(R.id.popup);
+       // video = findViewById(R.id.video);
+        //camera = findViewById(R.id.camera);
+        vlog = findViewById(R.id.myvlog);
+        message = findViewById(R.id.messages);
+        wallat = findViewById(R.id.wallat);
+        home = findViewById(R.id.home);
+        notification = findViewById(R.id.notification);
+        setting = findViewById(R.id.setting);
+        video1 = findViewById(R.id.video);
+        cammera = findViewById(R.id.camera);
+        golive = findViewById(R.id.golive);
 
-        video.setOnClickListener(new View.OnClickListener() {
+        video1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent i = new Intent(MainActivity.this , Goliv.class);
                 startActivity(i);
 
-
             }
         });
 
 
-        camera.setOnClickListener(new View.OnClickListener() {
+        vlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                Vlo1 fragment = new Vlo1();
+                ft.replace(R.id.replace,fragment);
+                ft.addToBackStack(null);
+                ft.commit();
+                if (drawer.isDrawerOpen(GravityCompat.START))
+                {
+                    drawer.closeDrawer(GravityCompat.START);
+                }
+                toolbar.setTitle("My Vlog");
+
+            }
+        });
+
+        message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this , AllChatsMessage.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        wallat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                Screen1 fragment = new Screen1();
+                ft.replace(R.id.replace,fragment);
+                ft.addToBackStack(null);
+                ft.commit();
+                if (drawer.isDrawerOpen(GravityCompat.START))
+                {
+                    drawer.closeDrawer(GravityCompat.START);
+                }
+
+                toolbar.setTitle("Home");
+            }
+        });
+
+
+
+
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
+
+        setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                Edit_Profile fragment = new Edit_Profile();
+                ft.replace(R.id.replace,fragment);
+                ft.addToBackStack(null);
+                ft.commit();
+                if (drawer.isDrawerOpen(GravityCompat.START))
+                {
+                    drawer.closeDrawer(GravityCompat.START);
+                }
+
+
+
+
+            }
+        });
+
+        cammera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -95,10 +207,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
-        AHBottomNavigationItem item1 =
+        /*AHBottomNavigationItem item1 =
                 new AHBottomNavigationItem("Live", R.drawable.home);
 
         AHBottomNavigationItem item2 =
@@ -149,7 +258,6 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
 
 
-
                         FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
 
                         while (getSupportFragmentManager().getBackStackEntryCount() > 0) {
@@ -164,21 +272,18 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case 2:
 
-                        if (popup.getVisibility() == View.VISIBLE){
+                        if (popup.getVisibility() == View.VISIBLE) {
 
                             popup.setVisibility(View.GONE);
-                        }
-
-                        else {
+                        } else {
                             popup.setVisibility(View.VISIBLE);
                         }
 
-                     /*  Intent i = new Intent(MainActivity.this , Goliv.class);
+                     *//*  Intent i = new Intent(MainActivity.this , Goliv.class);
                        startActivity(i);
-*/
+*//*
                         return true;
                     case 3:
-
 
 
                         FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
@@ -223,20 +328,28 @@ public class MainActivity extends AppCompatActivity {
         LiveScreen frag1 = new LiveScreen();
         ft.replace(R.id.replace, frag1);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
+        ft.commit();*/
+
+
+
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        Screen1 fragment = new Screen1();
+        ft.replace(R.id.replace,fragment);
+        //ft.addToBackStack(null);
         ft.commit();
-
-    }
-
-
-
-
-    @Override
-    public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START))
         {
             drawer.closeDrawer(GravityCompat.START);
         }
-        else {
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
             super.onBackPressed();
         }
 

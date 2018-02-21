@@ -151,29 +151,35 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="50dp"
-                            android:layout_marginEnd="50dp"
                             android:layout_marginBottom="10dp"
-                            android:padding="10dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginStart="50dp"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:padding="10dp">
 
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:layout_marginEnd="20dp"
-                                android:src="@drawable/facebook" />
+                                android:background="@drawable/white"
+                                android:padding="10dp"
+                                android:src="@drawable/face" />
 
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
-                                android:src="@drawable/google" />
+                                android:background="@drawable/white"
+                                android:padding="10dp"
+                                android:src="@drawable/googl" />
 
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:layout_marginStart="20dp"
-                                android:src="@drawable/twitter" />
+                                android:background="@drawable/white"
+                                android:padding="10dp"
+                                android:src="@drawable/twitt" />
 
 
                         </LinearLayout>
